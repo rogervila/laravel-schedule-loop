@@ -11,7 +11,7 @@ This package provides a `schedule:loop` command for Laravel that runs `schedule:
 ## Installation
 
 ```sh
-composer install rogervila/laravel-schedule-loop
+composer require rogervila/laravel-schedule-loop
 ```
 
 ## Usage
