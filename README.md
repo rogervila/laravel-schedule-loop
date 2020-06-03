@@ -2,6 +2,8 @@
 
 # Laravel Schedule Loop
 
+[![StyleCI](https://github.styleci.io/repos/269178408/shield?branch=master)](https://github.styleci.io/repos/269178408)
+
 ## About
 
 This package provides a `schedule:loop` command for Laravel that runs `schedule:run` every N seconds (60 by default)
