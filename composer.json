@@ -3,7 +3,8 @@
     "description": "schedule loop command for Laravel that runs schedule every N seconds (60 by default)",
     "keywords": [
         "laravel",
-        "schedule:run",
+        "schedule run",
+        "run",
         "loop",
         "schedule",
         "scheduler"
