@@ -22,8 +22,8 @@ jobs:
           uses: shivammathur/setup-php@v1
           with:
             php-version: ${{ matrix.php }}
-            extensions: mbstring, bcmath
-            coverage: pcov
+            extensions: mbstring, bcmath, xdebug
+            coverage: xdebug
 
       -   name: Cache dependencies
           uses: actions/cache@v1
