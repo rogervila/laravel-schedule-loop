@@ -42,7 +42,7 @@ class ScheduleLoopCommand extends Command
     public function handle()
     {
         while (true) {
-            $this->info(self::SCHEDULE_RUN_COMMAND);
+            $this->info('[' . now()->toDateTimeString() . '] ' . self::SCHEDULE_RUN_COMMAND);
             $this->call(self::SCHEDULE_RUN_COMMAND);
 
             sleep($this->argument(self::SLEEP_ARGUMENT));
