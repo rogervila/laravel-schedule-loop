@@ -5,6 +5,9 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rogervila_laravel-schedule-loop&metric=alert_status)](https://sonarcloud.io/dashboard?id=rogervila_laravel-schedule-loop)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_laravel-schedule-loop&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_laravel-schedule-loop)
 [![StyleCI](https://github.styleci.io/repos/269178408/shield?branch=master)](https://github.styleci.io/repos/269178408)
+[![Latest Stable Version](https://poser.pugx.org/rogervila/laravel-schedule-loop/v/stable)](https://packagist.org/packages/rogervila/laravel-schedule-loop)
+[![Total Downloads](https://poser.pugx.org/rogervila/laravel-schedule-loop/downloads)](https://packagist.org/packages/rogervila/laravel-schedule-loop)
+[![License](https://poser.pugx.org/rogervila/laravel-schedule-loop/license)](https://packagist.org/packages/rogervila/laravel-schedule-loop)
 
 ## About
 
