@@ -14,25 +14,25 @@ class ScheduleLoopCommand extends Command
     const SLEEP_ARGUMENT = 'sleep';
 
     /**
-     * The schedule:run console command.
+     * The command argument name.
      *
      * @var string
      */
-    const SCHEDULE_RUN_COMMAND = 'schedule:run';
+    const COMMAND_ARGUMENT = 'run';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'schedule:loop {' . self::SLEEP_ARGUMENT . '=60}';
+    protected $signature = 'schedule:loop {' . self::SLEEP_ARGUMENT . '=60} {' . self::COMMAND_ARGUMENT . '=schedule:run}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Run schedule:run inside a loop';
+    protected $description = 'Run commands inside a loop';
 
     /**
      * Execute the console command.
@@ -42,8 +42,8 @@ class ScheduleLoopCommand extends Command
     public function handle()
     {
         while (true) {
-            $this->info('[' . now()->toDateTimeString() . '] ' . self::SCHEDULE_RUN_COMMAND);
-            $this->call(self::SCHEDULE_RUN_COMMAND);
+            $this->info('[' . now()->toDateTimeString() . '] ' . $this->argument(self::COMMAND_ARGUMENT));
+            $this->call($this->argument(self::COMMAND_ARGUMENT));
 
             sleep($this->argument(self::SLEEP_ARGUMENT));
 

@@ -1,6 +1,6 @@
 {
     "name": "rogervila/laravel-schedule-loop",
-    "description": "schedule loop command for Laravel that runs schedule every N seconds (60 by default)",
+    "description": "Run Laravel commands every N seconds (60 by default)",
     "keywords": [
         "laravel",
         "schedule run",
@@ -42,5 +42,11 @@
                 "ScheduleLoop\\ScheduleLoopServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "test": [
+            "composer validate",
+            "vendor/bin/phpunit"
+        ]
     }
 }

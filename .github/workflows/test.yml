@@ -36,7 +36,7 @@ jobs:
             composer install --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
 
       -   name: Execute tests
-          run: vendor/bin/phpunit
+          run: composer test
 
       -   name: SonarCloud Scan
           env:
