@@ -11,7 +11,7 @@
 
 ## About
 
-This package provides a `schedule:loop` command for Laravel that runs `schedule:run` every N seconds (60 by default)
+This package provides a `schedule:loop` command for Laravel that runs any command every N seconds (60 by default)
 
 ## Installation
 
@@ -21,17 +21,24 @@ composer require rogervila/laravel-schedule-loop
 
 ## Usage
 
-By default, it will loop every 60 seconds
+By default, it will loop `schedule:run` every 60 seconds
 
 ```sh
 php artisan schedule:loop
+
+# Is the same as
+
+php artisan schedule:loop 60 schedule:run
 ```
 
-You may specify the loop sleep with an integer
+You may specify the loop sleep time with an integer
 
 ```sh
-# Will run schedule:run every 30 seconds.
-php artisan schedule:loop 30
+# Will run schedule:run every 120 seconds.
+php artisan schedule:loop 120
+
+# Will run inspire every 5 seconds.
+php artisan schedule:loop 5 inspire
 ```
 
 ## License
