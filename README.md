@@ -46,3 +46,4 @@ php artisan schedule:loop 5 inspire
 Laravel Schedule Loop is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
